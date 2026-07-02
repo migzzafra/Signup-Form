@@ -7,3 +7,8 @@ body{
 .imagebanner {
     width: 300px;
 }
+
+.formcontent {
+    display: flex;
+    flex-direction: column;
+}
