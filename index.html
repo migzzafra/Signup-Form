@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up Page</title>
 </head>
     <link rel="stylesheet" href="styles.css">
 <body>
@@ -15,27 +15,28 @@
             <p>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams.</p>
             <p>Sign up to get started.</p>
         </header>
-        <form class="leftformcontent" action="#">
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name" placeholder="ODIN">
+        <section class="fillupform">
+            <form class="leftformcontent formcontent" action="#">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" name="first-name" id="first-name" placeholder="ODIN">
 
-            <label for="user-email">EMAIL ADDRESS</label>
-            <input type="email" name="user-email" id="user-email" placeholder="odinthor@gmail.com">
+                <label for="user-email">EMAIL ADDRESS</label>
+                <input type="email" name="user-email" id="user-email" placeholder="odinthor@gmail.com">
 
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password">
+            </form>
+            <form action="#" class="rightformcontent formcontent">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" name="last-name" id="last-name" placeholder="THOR">
 
-        </form>
-        <form action="#" class="formcontentright">
-            <label for="last-name">LAST NAME</label>
-            <input type="text" name="last-name" id="last-name" placeholder="THOR">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="text" name="phone-number" id="phone-number" maxlength="11" size="11" placeholder="09101082463">
 
-            <label for="phone-number">PHONE NUMBER</label>
-            <input type="text" name="phone-number" id="phone-number" maxlength="11" size="11" placeholder="09101082463">
-
-            <label for="passwordconfirmation">CONFIRM PASSWORD</label>
-            <input type="password" name="passwordconfirmation" id="passwordconfirmation">
-        </form>
+                <label for="passwordconfirmation">CONFIRM PASSWORD</label>
+                <input type="password" name="passwordconfirmation" id="passwordconfirmation">
+            </form>
+        </section>
     </div>
 </body>
 </html>

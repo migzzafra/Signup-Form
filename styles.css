@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 .imagebanner {
@@ -11,4 +12,16 @@ body{
 .formcontent {
     display: flex;
     flex-direction: column;
+}
+
+.fillupform {
+    display: flex;
+}
+
+.formcontent{
+    padding: 3px;
+}
+
+form label{
+    padding: 5px;
 }
