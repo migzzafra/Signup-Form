@@ -1,25 +1,78 @@
-body{
+/* Variables */
+:root{
+    --border-fillupform: 1px solid rgb(226, 67, 67);
+    --border-test: 1px solid black;
+    --shadow-color-body: rgb(141, 150, 153);
+    --shadow-fillupform: 0px 5px 10px 0px rgb(197, 203, 204);
+    --padLR-formcont: 25px;
+}
+
+/* Centers the whole page */
+html{
     margin: 0;
+    height: 100%;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
+body{
+    margin: 5vw;
+    padding: 0;
+    /* border: var(--border-test); */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 10px 10px 0px var(--shadow-color-body);
+}
+
+.bannersection{
+    width:25vw;
+}
+
 .imagebanner {
-    width: 300px;
+    width: 350px;
+}
+
+.forms-container {
+    border: var(--border-test);
+    box-sizing: border-box;
+    padding: 0 var(--padLR-formcont) 0 var(--padLR-formcont);
+
+}
+
+
+.fillupform {
+    background-color: rgb(255, 255, 248);
+    box-shadow: var(--shadow-fillupform);
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: calc(var(--padLR-formcont)*-1);
+    margin-right: calc(var(--padLR-formcont)*-1);
+
 }
 
 .formcontent {
+    border: var(--border-test);
     display: flex;
     flex-direction: column;
-}
-
-.fillupform {
-    display: flex;
-}
-
-.formcontent{
     padding: 3px;
+    margin-left: var(--padLR-formcont);
+}
+
+.dothis{
+    margin: 0 0 0 var(--padLR-formcont);
+    padding: 0;
+}
+
+.inputform{
+    display: flex;
+    border: var(--border-test);
+    gap: 2.5vw;
 }
 
 form label{

@@ -7,36 +7,61 @@
 </head>
     <link rel="stylesheet" href="styles.css">
 <body>
-    <div class="banner image">
+<!-- IMAGE BANNER SECTION
+This section places the image banner at the left side of the page-->
+    <div class="bannersection">
         <img class="imagebanner" src="img/you-are.png" alt="you-are">
     </div>
-    <div class="forms-container">
+
+<!-- FORM SECTION
+ This section places the input elements on the right side of the page-->
+
+    <!-- HEADER / INTRODUCTORY -->
+    <div class="forms-container"> 
         <header class="headcontent">
             <p>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams.</p>
             <p>Sign up to get started.</p>
         </header>
+    
+    <!-- INPUT FORM SECTION -->
         <section class="fillupform">
-            <form class="leftformcontent formcontent" action="#">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name" placeholder="ODIN">
+            <div class="dothis">
+                <p class="introfill">Let's do this!</p>
+            </div>
+    
+    <!-- FIRST COLUMN INPUTS -->
+            <div class="inputform">
+                <form action="#" class="leftinput formcontent">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="ODIN">
 
-                <label for="user-email">EMAIL ADDRESS</label>
-                <input type="email" name="user-email" id="user-email" placeholder="odinthor@gmail.com">
+                    <label for="user-email">EMAIL ADDRESS</label>
+                    <input type="email" name="user-email" id="user-email" placeholder="odinthor@gmail.com">
 
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
-            </form>
-            <form action="#" class="rightformcontent formcontent">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" placeholder="THOR">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </form>
+    
+    <!-- SECOND COLUMN INPUTS -->
+                <form action="#" class="rightinput formcontent">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="THOR">
+                    
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="text" name="phone-number" id="phone-number" maxlength="11" size="11" placeholder="09101082463">
 
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="text" name="phone-number" id="phone-number" maxlength="11" size="11" placeholder="09101082463">
-
-                <label for="passwordconfirmation">CONFIRM PASSWORD</label>
-                <input type="password" name="passwordconfirmation" id="passwordconfirmation">
-            </form>
+                    <label for="passwordconfirmation">CONFIRM PASSWORD</label>
+                    <input type="password" name="passwordconfirmation" id="passwordconfirmation">
+                </form>
+            </div>
         </section>
+        
+    <!-- CREATE ACCOUNT BUTTON -->
+        <section class="submitsection">
+            <button class="confirmcreation">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </section>
+        
     </div>
 </body>
 </html>
